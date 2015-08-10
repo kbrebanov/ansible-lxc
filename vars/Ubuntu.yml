@@ -1,0 +1,5 @@
+---
+# vars file for ansible-lxc (Ubuntu specific)
+
+lxc_packages:
+  - lxc

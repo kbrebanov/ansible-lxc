@@ -1,0 +1,7 @@
+---
+# vars file for zip (Alpine specific)
+
+lxc_packages:
+  - lxc
+  - lxc-templates
+  - bridge

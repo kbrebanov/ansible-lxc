@@ -1,2 +1,18 @@
 ---
 # tasks file for ansible-lxc
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags: lxc
+
+- include: CentOS.yml
+  when: ansible_distribution == "CentOS"
+  tags: lxc
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags: lxc
+
+- include: Alpine.yml
+  when: ansible_distribution == "Alpine"
+  tags: lxc

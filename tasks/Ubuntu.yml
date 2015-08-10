@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-lxc (Ubuntu specific)
+
+- name: Install LXC packages
+  apt: name={{ item }} state=present update_cache=yes
+  with_items: lxc_packages
+  tags: lxc
