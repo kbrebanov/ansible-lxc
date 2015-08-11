@@ -4,4 +4,5 @@
 lxc_packages:
   - lxc
   - lxc-templates
+  - lxc-lvm
   - bridge
